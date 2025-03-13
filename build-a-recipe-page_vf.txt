@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Canja</title>
+      <meta charset="utf-8">
+   </head>
+  <body>
+      <h1>Brazilian Canja Recipe</h1>
+      <p>An amazing meal when you are sick or hungover.</p>
+      <h2>Ingredients</h2>
+      <ul>
+        <li>400gr of chicken</li>
+        <li>500gr of potatos</li>
+        <li>1 onion</li>
+        <li>3 garlic cloves</li>
+        <li>2 chicken broth tablet</li>
+        <li>1 bunch of green onion</li>
+        <li>salt</li>
+        <li>pepper</li>
+      </ul>
+      <h2>Instructions</h2>
+      <ol>
+        <li>Put the chicken, the potatos, the onion, the garlic and the chicken broth with salt and pepper in a pressure cooker</li>
+        <li>Cook it for 30 min.</li>
+        <li>After finish, way some minutes to reduce the pressure and open the cooker to add green onions</li>
+        <li>You can serve it with toasts!</li>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg" alt="Canja">
+      </ol>
+      </body>
+  
+</html>
