@@ -1,0 +1,22 @@
+```mermaid
+gantt
+    title Cronograma de Testes e Liberações
+    dateFormat YYYY-MM-DD
+    
+    section Setup
+    Liberações HML             : 2025-10-22, 1d
+
+    section Validações
+    Requisições, OBC, Compras  : 2025-11-03, 2d
+    Viagens, RD, Diárias       : 2025-11-03, 2d
+    Fiscal (RI)                : 2025-11-04, 2d
+    Financeiro (AP/AR)         : 2025-11-04, 2d
+    Financeiro (Cash)          : 2025-11-04, 2d
+    Contábil                   : 2025-11-05, 2d
+    Tax One                    : 2025-11-07, 1d
+
+    section Entregas
+    Finalização dos testes     : milestone, 2025-11-07, 1d
+    Liberações PROD            : milestone, 2025-11-10, 1d
+    Alinhamento Cisão Contábil : 2025-11-10, 1d
+```
