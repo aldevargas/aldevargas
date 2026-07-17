@@ -15,8 +15,6 @@ flowchart TD
     SERP["SERP\n(Apontamentos)"]:::gray
     Senior["Senior\n(Folha)"]:::gray
     Sysphera["Sysphera\n(Orçamento)"]:::gray
-    iProc["iProc\n(Requisições)"]:::gray
-    OBC["OBC\n(Cotações)"]:::gray
 
     %% Blue (Vendas e Contratos)
     APEX_CCO["APEX\nCCO"]:::blue
@@ -27,6 +25,8 @@ flowchart TD
     AR["AR Billing\n(A Receber)"]:::blue
 
     %% Yellow (Compras e Despesas)
+    iProc["iProc\n(Requisições)"]:::yellow
+    OBC["OBC\n(Cotações)"]:::gray
     PO["PO\n(Compras)"]:::yellow
     RI["RI\n(Fiscal)"]:::yellow
     OIE["OIE\n(Relatório Despesas)"]:::yellow
@@ -38,13 +38,13 @@ flowchart TD
     APEX_Viagens["APEX\nViagens/Diárias"]:::orange
 
     %% Red (Caixa e Bancos)
-    CE["CE\n(Caixa)"]:::red
+    CE["CE\n(Caixa)"]:::green
 
     %% Purple (Contabilidade Core)
     GL["GL\n(Contábil)"]:::purple
 
     %% Pink (Obrigações Fiscais)
-    TaxOne["Tax One\n(Obrigações Acessórias)"]:::pink
+    TaxOne["Tax One\n(Obrigações Acessórias)"]:::gray %%pink
 
     %% CONEXÕES (SETAS)
     %% Lado Esquerdo (Projetos, Vendas, Contratos, RH)
