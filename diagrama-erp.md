@@ -62,8 +62,8 @@ flowchart TD
     AR --> GL
     
     %% Lado Direito (Compras, Inventário, Fiscal)
-    iProc o--> OBC
-    OBC o--> PO
+    iProc --> OBC
+    OBC --> PO
     PO --> RI
     RI --> AP
     RI --> INV
