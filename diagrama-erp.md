@@ -14,6 +14,7 @@ flowchart TD
     %% NÓS DO DIAGRAMA
     %% Gray (External Systems / HR / Planning)
     SERP["SERP\n(Apontamentos)"]:::gray
+    PA["PA\n(Projetos)"]:::pink
     Senior["Senior\n(Folha)"]:::gray
     Sysphera["Sysphera\n(Orçamento)"]:::gray
 
@@ -21,7 +22,6 @@ flowchart TD
     APEX_CCO["APEX\nCCO"]:::blue
     APEX_Contratos["APEX\nContratos"]:::blue
     APEX_Faturamento["APEX\nFaturamento"]:::blue
-    PA["PA\n(Projetos)"]:::blue
     OKS["OKS\n(Contratos)"]:::blue
     AR["AR Billing\n(A Receber)"]:::blue
 
@@ -51,9 +51,9 @@ flowchart TD
     %% Lado Esquerdo (Projetos, Vendas, Contratos, RH)
     Senior --> GL
     Senior -.-> SERP
-    SERP --> PA
+    SERP <--> PA
     APEX_Contratos --> OKS
-    APEX_CCO --> AR
+    APEX_CCO <--> AR
     APEX_Faturamento --> AR
     PA --> OKS
     PA --> GL
@@ -62,8 +62,8 @@ flowchart TD
     AR --> GL
     
     %% Lado Direito (Compras, Inventário, Fiscal)
-    iProc --> OBC
-    OBC --> PO
+    iProc o--> OBC
+    OBC o--> PO
     PO --> RI
     RI --> AP
     RI --> INV
@@ -77,7 +77,7 @@ flowchart TD
 
     %% Centro (Caixa e Contábil)
     CE --> GL
-    GL --> Sysphera
+    GL ==> Sysphera
 
     %% Integrações com Tax One (Pink)
     AR -.-> TaxOne
