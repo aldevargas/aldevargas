@@ -9,6 +9,7 @@ flowchart TD
     classDef orange fill:#f2a640,stroke:#333,stroke-width:1px,color:#000
     classDef purple fill:#c77ff2,stroke:#333,stroke-width:1px,color:#000
     classDef pink fill:#f2a7c5,stroke:#333,stroke-width:1px,color:#000
+    classDef green fill:#81c784,stroke:#333,stroke-width:1px,color:#000
 
     %% NÓS DO DIAGRAMA
     %% Gray (External Systems / HR / Planning)
@@ -37,20 +38,20 @@ flowchart TD
     INV["INV\n(Inventário)"]:::orange
     APEX_Viagens["APEX\nViagens/Diárias"]:::orange
 
-    %% Red (Caixa e Bancos)
+    %% Green (Caixa e Bancos)
     CE["CE\n(Caixa)"]:::green
 
     %% Purple (Contabilidade Core)
     GL["GL\n(Contábil)"]:::purple
 
     %% Pink (Obrigações Fiscais)
-    TaxOne["Tax One\n(Obrigações Acessórias)"]:::gray %%pink
+    TaxOne["Tax One\n(Obrigações Acessórias)"]:::gray
 
     %% CONEXÕES (SETAS)
     %% Lado Esquerdo (Projetos, Vendas, Contratos, RH)
-    SERP --> PA
     Senior --> GL
     Senior -.-> SERP
+    SERP --> PA
     APEX_Contratos --> OKS
     APEX_CCO --> AR
     APEX_Faturamento --> AR
