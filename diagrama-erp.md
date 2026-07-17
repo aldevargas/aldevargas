@@ -1,3 +1,5 @@
+```mermaid
+
 flowchart TD
     %% Definindo as cores
     classDef blue fill:#7fb2e5,stroke:#333,stroke-width:1px,color:#000
@@ -81,3 +83,5 @@ flowchart TD
     AP -.-> TaxOne
     RI -.-> TaxOne
     GL -.-> TaxOne
+
+```
